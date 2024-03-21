@@ -10,8 +10,7 @@ COPY Gemfile /api/Gemfile
 
 COPY Gemfile.lock /api/Gemfile.lock
 
-RUN gem update --system ${RUBYGEMS_VERSION} && \
-    bundle install
+RUN bundle install
 
 COPY . /api
 
