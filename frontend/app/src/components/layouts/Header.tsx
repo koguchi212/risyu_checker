@@ -104,7 +104,7 @@ const Header: React.FC = () => {
             variant="h6"
             className={classes.title}
           >
-            Sample
+            履修チェック
           </Typography>
           <AuthButtons />
         </Toolbar>

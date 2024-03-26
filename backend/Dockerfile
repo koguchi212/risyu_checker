@@ -14,6 +14,6 @@ RUN bundle install
 
 COPY . /api
 
-
+RUN apt-get update -qq && apt-get install -y default-mysql-client
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
