@@ -1,6 +1,6 @@
 require "test_helper"
 
-class FucultyTest < ActiveSupport::TestCase
+class Api::V1::LecturesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

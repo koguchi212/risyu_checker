@@ -1,5 +1,5 @@
 class Department < ApplicationRecord
-    belongs_to :fuculty
+    belongs_to :faculty
 
     has_many :attendances
     has_many :users, through: :attendances
