@@ -25,4 +25,4 @@
     ```
 
 ## ER図
-![](./backend/ER/ER_diagram.drawio.svg)
+![](./backend/ER/ER_diagram.svg)
