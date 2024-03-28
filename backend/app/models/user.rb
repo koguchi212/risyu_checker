@@ -9,5 +9,4 @@ class User < ActiveRecord::Base
 
   has_many :attendances
   has_many :lectures, through: :attendances
-  has_many :departments, through: :attendances
 end
