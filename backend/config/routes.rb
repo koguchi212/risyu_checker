@@ -5,8 +5,12 @@ Rails.application.routes.draw do
       resources :users, only: %i[index show]
       resources :classifications, only: %i[index]
       resources :lectures, only: %i[index show]
-      resources :faculties, only: %i[index show]
-      resources :departments, only: %i[index show]
+      resources :universities, only: %i[index] do
+        resources :faculties, only: %i[index]
+      end
+      resources :faculties, only: %i[index] do
+        resources :departments, only: %i[index]
+      end
 
       mount_devise_token_auth_for 'User', at: 'auth', controllers: {
         registrations: 'api/v1/auth/registrations'

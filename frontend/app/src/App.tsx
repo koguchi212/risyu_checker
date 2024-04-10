@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from "react"
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 
 import CommonLayout from "components/layouts/CommonLayout"
-import Home from "components/pages/Home"
+import Affiliation from "components/pages/Affiliation"
 import SignUp from "components/pages/SignUp"
 import SignIn from "components/pages/SignIn"
 
@@ -74,7 +74,7 @@ const App: React.FC = () => {
               path="/"
               element={
                 <Private>
-                  <Home />
+                  <Affiliation />
                 </Private>
           }
         />
